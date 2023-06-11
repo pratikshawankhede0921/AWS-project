@@ -1,5 +1,5 @@
 # 👨🏼‍💻 Deploying a 4 Tier Mailing Web Application on AWS 👨🏼‍💻
-## NOTE (ANNOUNCEMENT) DEC 29th:
+## NOTE (ANNOUNCEMENT) 
 - I recently updated the branch name `three-tier-mailing-app-project` where the project scripts are in to `four-tier-mailing-app-project` 
 - You do not have to border about changing anything on your end because the project runbooks/scripts are all still the same, I only update the branch name to match the architecture we're building for this Application.
 - To make things esier for everyone, I have `MADE` the `four-tier-mailing-app-project` BRANCH the `DEFAULT` BRANCH. So you don't have to switch to the project branch everytime you click on the base repo link. 
@@ -499,6 +499,54 @@ Now run the above command to check added identities or Private keys
 ## STEP 12: Create a Route 53 Hosted Zone and Record For The Frontend Load Balancer Endpoint
 
 
+
+
+
+-DEPLOYING A 4 TIER MAILING WEB 
+APPLICATION ON AWS
+INTRODUCTION 
+ The multi-tier application (three-tier, n-tier, and so forth.) has been a cornerstone 
+architecture pattern for decades, and remains a popular pattern for user-facing 
+applications. Although the language used to describe a multi-tier architecture varies, a 
+multi-tier application generally consists of the following components: 
+❑ Presentation tier: Component that the user directly interacts with (for example, 
+webpages and mobile app UIs). 
+❑ Logic tier: Code required to translate user actions to application functionality (for 
+example, CRUD database operations and data processing).
+❑ Data tier: Storage media (for example, databases, object stores, caches and file 
+systems) that hold the data relevant to the application.
+ABSTRACT
+❑ Amazon Web Services (AWS) offers multiple options for provisioning infrastructure and 
+deploying your applications. Whether your application architecture is a simple threetier web application or a complex set of workloads, AWS offers deployment services to 
+meet the requirements of your application and your organization.
+❑ This whitepaper is intended for those individuals looking for an overview of the 
+different deployment services offered by AWS. It lays out common features available in 
+these deployment services, and articulates basic strategies for deploying and updating 
+application stacksPROBLEM DEFINATION/STATEMENT
+Every web developer should familiar with the Four Tier deployment model 
+of Development, Testing, Staging and Production. In most places, this is the “standard” for 
+building, testing, and serving web applications, and looks like the following:
+❑ Development: This is where developers make changes to code, and is usually a local, 
+single-tenant environment (e.g. a developer’s laptop).
+❑ Testing: This is an integration environment where developers merge changes to test that 
+they work together. It may also be a Quality Assurance or UAT environment.
+❑ Staging: This is where tested changes are run against Production-equivalent 
+infrastructure and data to ensure they will work properly when released.
+❑ Production: This is the live production environment
+
+This model has been around for a while and is often held-up as a kind of best 
+practice for deployment architectures. It has a number of problems, however...
+The Four-Tier model arose from a particular historical confluence of increasing 
+complexity in web application design, testing, and packaging, and physical 
+constraints on computing infrastructure. 
+As software increased in complexity, developers started using more complex 
+packaging methods for deploying that software. 
+This enabled us to start breaking down the deployment model into a series of 
+steps that more closely matched the kinds of testing that were required for 
+complex applications. 
+These steps became our actual environments. We started moving code through 
+these tiers, with each tier professing to offer some kind of guarantee as to the 
+increasing consistency of the data and environment, and the quality of the code.
 
 
 
